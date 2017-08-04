@@ -1,19 +1,41 @@
-## Introduction
+- If you want to join two strings together in Python, then it's often simplest to use **concatenation**.
 
-Add project description here. What will learners be making?
+	```python
+	sentence = 'The quick brown fox' + ' jumped over the lazy dog'
+	print(sentence)
+	```
 
-### What you will make
+- This would give you the whole string.
 
-Add something here to showcase here, for example:
+	```python
+	'The quick brown fox jumped over the lazy dog'
+	```
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
+- Sometimes though, you want to insert things into the middle of a string, and then the `.format()` string method is easier to use.
 
-Add instructions here. These should explain either how the finished project will work, or explain how to interact with the content above.
+- With `.format()` you can use numbers inside curly brackets as placeholders. Like this for example:
 
-### What you will learn
+	```python
+	sentence = 'The {0} {1} fox jumped over the {2} dog'
+	```
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+- By giving `.format()` a tuple of values, they will be inserted into the string.
 
-+ [Add curriculum strand/level description.](https://www.raspberrypi.org/curriculum/strand/level)
+	```python
+	sentence.format('quick', 'brown', 'lazy)
+	```
+
+- This gives the original sentence, but you can easily change it.
+
+	```python
+	sentence.format('slow', 'green', 'naughty')
+	```
+
+- You can also pass in other objects, like variable.
+
+	```python
+	foo = 'tired'
+	bar = 'purple'
+	baz = 'hairy'
+	sentence.format(foo, bar, baz)
+	```

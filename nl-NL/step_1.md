@@ -1,39 +1,39 @@
-- If you want to join two strings together in Python, then it's often simplest to use **concatenation**. For example, you can do the following:
+- Als je twee strings wilt samenvoegen in Python, dan is het vaak eenvoudig om **concatenatie (aaneenschakeling)** te gebruiken. Je kunt bijvoorbeeld het volgende doen:
 
     ```python
-    sentence = 'The quick brown fox' + ' jumped over the lazy dog'
-    print(sentence)
+    zin = 'De snelle bruine vos' + ' sprong over de luie hond'
+print(zin)
     ```
 
-- This will turn the two strings into one and return it.
+- Hiermee worden de twee strings één en wordt deze teruggegeven.
 
     ```python
-    'The quick brown fox jumped over the lazy dog'
+    'De snelle bruine vos sprong over de luie hond'
     ```
 
-- Sometimes you might want to insert things into the middle between two strings, in which case the `.format()` string method is easier. You can use `.format()` with numbers inside curly brackets as placeholders. Like this for example:
+- Soms wil je misschien dingen in het midden tussen twee strings invoegen, in welk geval de `.format()` string-methode eenvoudiger is. Je kunt `.format()` met getallen tussen accolades als tijdelijke aanduidingen gebruiken. Zoals dit bijvoorbeeld:
 
     ```python
-    sentence = 'The {0} {1} fox jumped over the {2} dog'
+    zin = 'De {0} {1} vos sprong over de {2} hond'
     ```
 
-- If you give `.format()` a tuple of values, it will insert them into the string. For example, the following will return the original sentence...
+- Als je `.format()` een aantal waarden geeft, worden deze in de tekenreeks ingevoegd. Het volgende geeft bijvoorbeeld de oorspronkelijke zin terug...
 
     ```python
-    sentence.format('quick', 'brown', 'lazy)
+    zin.format('snel', 'bruin', 'lui)
     ```
 
-- ...but you can easily change it to something else, for example like this:
+- ... maar je kunt het eenvoudig veranderen in iets anders, bijvoorbeeld als dit:
 
     ```python
-    sentence.format('slow', 'green', 'naughty')
+    zin.format('langzaam', 'groen', 'ondeugend')
     ```
 
-- You can also pass in other objects, like variables.
+- Je kunt ook andere objecten doorgeven, zoals variabelen.
 
     ```python
-    foo = 'tired'
-    bar = 'purple'
-    baz = 'hairy'
-    sentence.format(foo, bar, baz)
+    aap = 'moe'
+noot = 'paars'
+mies = 'harig'
+zin.format(aap, noot, mies)
     ```

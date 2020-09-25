@@ -1,0 +1,18 @@
+---
+title: Formato simple de cadenas en Python
+hero_image: images/banner.png
+description: Formateando cadenas en Python
+original_url:
+theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+duration: 1
+listed: false
+ingredient: true
+copyedit: true
+curriculum:
+interests:
+technologies: "python"
+site_areas:
+steps:
+  - 
+    title: Formato de cadena
+

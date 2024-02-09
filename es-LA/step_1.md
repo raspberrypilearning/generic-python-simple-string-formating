@@ -1,7 +1,7 @@
 - Si quieres unir dos cadenas en Python, a menudo es más sencillo usar **concatenación**. Por ejemplo, puedes hacer lo siguiente:
 
     ```python
-    oracion = 'El rápido zorro marrón' + 'saltó sobre el perro perezoso'
+    oracion = 'El rápido zorro marrón' + ' saltó sobre el perro perezoso'
     print(oracion)
     ```
 
@@ -20,7 +20,7 @@
 - Si le das a `.format()` una tupla de valores, los insertará en la cadena. Por ejemplo, lo siguiente devolverá la frase original...
 
     ```python
-    oracion.format('rápido', 'marrón', 'perezoso)
+    oracion.format('rápido', 'marrón', 'perezoso')
     ```
 
 - ... pero puede cambiarlo fácilmente a otra cosa, por ejemplo así:
